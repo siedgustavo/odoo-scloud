@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "my_module",
+    'name': "sc_products_module",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modulo de productos tienda SiedCloud""",
 
     'description': """
-        Long description of module's purpose
+        Este modulo va ser utilizado para el ABM de productos de la tienda
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "SiedCloud",
+    'website': "http://www.siedcloud.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml

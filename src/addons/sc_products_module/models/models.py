@@ -2,14 +2,24 @@
 
 from odoo import models, fields, api
 
-# class my_module(models.Model):
-#     _name = 'my_module.my_module'
+ class sc_product(models.Model):
+     _name = 'sc_product.product'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+     name = fields.Char()
+     description = fields.Text()
+     product_category_id = fields.many2one('sc_product_category.category')
+     price = fields.Integer()
+
+
+class sc_product_category(models.Model):
+    _name = 'sc_product_category.category'
+
+    name = fields.Char()
+    product_type_id = fields.many2one('sc_product_type.type')
+    description = fields.Text()
+
+class sc_product_type(models.Model):
+    _name = 'sc_product_type.type'
+
+    name = fields.Char()
+    description = fields.Text()
